@@ -1,1 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090d16">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="google-site-verification" content="wqDVEHvuQ14lzMtLiEWIOLE-gQHNpV_k75GhLLfVGdA" />
+<meta name="monetag" content="69de0ae2199d8d09cd14dbb19b0f01a7">
+<meta name="description" content="Generate stylish fancy fonts instantly. Convert normal text into cursive, gothic, bold, aesthetic and decorative fonts. Copy and paste free fancy text styles.">
 
+<title>Fancy Font Generator - Free Fonts Copy Paste</title>
+
+<script>
+(function(s){s.dataset.zone='12196498',s.src='https://nap5k.com'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))
+</script>
+
+<style>
+:root{
+--bg:#090d16;
+--panel:#111827;
+--panel2:#151d2d;
+--border:#273449;
+--text:#f1f5f9;
+--muted:#94a3b8;
+--purple:#a855f7;
+--purple2:#7c3aed;
+--blue:#38bdf8;
+--green:#34d399;
+--shadow:0 15px 45px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+background:var(--bg);
+color:var(--text);
+font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+line-height:1.65;
+min-height:100vh;
+}
+button,input,textarea{font:inherit}
+a{color:inherit;text-decoration:none}
+.container{width:min(1050px,92%);margin:auto}
+header{
+background:rgba(9,13,22,.96);
+border-bottom:1px solid rgba(148,163,184,.12);
+}
+.nav{
+min-height:70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:12px;
+}
+.logo{
+font-size:20px;
+font-weight:900;
+letter-spacing:-.8px;
+}
+.logo span{
+background:linear-gradient(90deg,#a855f7,#38bdf8);
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+}
+.nav-badge{
+font-size:11px;
+color:#d8b4fe;
+padding:6px 12px;
+border:1px solid rgba(168,85,247,.3);
+background:rgba(168,85,247,.08);
+border-radius:30px;
+}
+.hero{
+text-align:center;
+padding:52px 0 30px;
+}
+.eyebrow{
+display:inline-block;
+padding:6px 13px;
+border-radius:30px;
+border:1px solid rgba(168,85,247,.3);
+background:rgba(168,85,247,.08);
+color:#d8b4fe;
+font-size:12px;
+font-weight:750;
+letter-spacing:.6px;
+text-transform:uppercase;
+}
+.hero h1{
+font-size:clamp(31px,6vw,49px);
+line-height:1.15;
+letter-spacing:-1.8px;
+font-weight:900;
+margin:19px auto 14px;
+}
+.gradient-text{
+background:linear-gradient(90deg,#c084fc,#a855f7,#38bdf8);
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent;
+}
+.hero-description{
+max-width:710px;
+margin:auto;
+font-size:15px;
+color:var(--muted);
+}
+.tool-card{
+max-width:850px;
+margin:30px auto 0;
+padding:25px;
+border:1px solid var(--border);
+border-radius:21px;
+background:linear-gradient(145deg,#151d2d,#101624);
+box-shadow:var(--shadow),0 0 35px rgba(168,85,247,.045);
+text-align:left;
+}
+.input-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:10px;
+margin-bottom:13px;
+}
+.input-header label{
+font-size:15px;
+font-weight:800;
+}
+.live-tag{
+font-size:11px;
+color:var(--green);
+}
+#userInput{
+width:100%;
+height:115px;
+resize:vertical;
+padding:17px;
+border:1px solid #39465c;
+border-radius:13px;
+outline:none;
+background:#090f1c;
+color:white;
+font-size:17px;
+transition:.2s;
+}
+#userInput:focus{
+border-color:var(--purple);
+box-shadow:0 0 0 3px rgba(168,85,247,.13);
+}
+.input-bottom{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:10px;
+margin-top:9px;
+color:var(--muted);
+font-size:11px;
+}
+.clear-btn{
+background:transparent;
+border:0;
+color:#c084fc;
+cursor:pointer;
+padding:4px;
+}
+.results-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:31px 0 15px;
+gap:10px;
+}
+.results-header h2{
+font-size:19px;
+font-weight:850;
+}
+.results-header span{
+font-size:11px;
+color:var(--muted);
+}
+.styles-list{
+display:grid;
+gap:12px;
+}
+.style-card{
+border:1px solid var(--border);
+border-radius:13px;
+padding:15px;
+background:#0c1422;
+transition:border-color .2s,transform .2s;
+}
+.style-card:hover{
+border-color:rgba(168,85,247,.6);
+transform:translateY(-1px);
+}
+.style-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:10px;
+margin-bottom:11px;
+}
+.style-name{
+font-size:12px;
+font-weight:800;
+color:#c4b5fd;
+letter-spacing:.2px;
+}
+.copy-btn{
+border:1px solid rgba(168,85,247,.4);
+background:rgba(168,85,247,.12);
+color:#e9d5ff;
+padding:7px 13px;
+border-radius:8px;
+font-size:11px;
+font-weight:800;
+cursor:pointer;
+min-width:68px;
+transition:.2s;
+}
+.copy-btn:hover{
+background:var(--purple);
+color:white;
+}
+.style-output{
+min-height:37px;
+overflow-wrap:anywhere;
+word-break:break-word;
+font-size:21px;
+line-height:1.5;
+color:#f8fafc;
+}
+.empty-state{
+color:var(--muted);
+font-size:14px;
+}
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin:24px 0 50px;
+}
+.feature{
+background:var(--panel);
+border:1px solid var(--border);
+border-radius:12px;
+padding:15px;
+text-align:center;
+}
+.feature-icon{font-size:21px}
+.feature strong{display:block;font-size:13px}
+.feature p{font-size:11px;color:var(--muted);margin-top:3px}
+.content-section{
+max-width:850px;
+margin:auto;
+padding:30px 0;
+}
+.section-title{
+font-size:25px;
+letter-spacing:-.6px;
+margin-bottom:13px;
+}
+.content-section p{
+color:var(--muted);
+font-size:14px;
+margin:12px 0;
+}
+.info-box{
+background:#131a2a;
+border:1px solid var(--border);
+border-left:3px solid var(--purple);
+border-radius:10px;
+padding:17px;
+margin:19px 0;
+}
+.info-box strong{color:#c084fc}
+.steps{
+display:grid;
+gap:11px;
+margin:20px 0;
+}
+.step{
+padding:15px;
+background:var(--panel);
+border:1px solid var(--border);
+border-radius:11px;
+}
+.step strong{font-size:14px}
+.step p{margin:5px 0 0}
+.faq-list{display:grid;gap:11px;margin-top:19px}
+.faq{
+padding:16px;
+border-radius:11px;
+background:var(--panel);
+border:1px solid var(--border);
+}
+.faq h3{font-size:14px;margin-bottom:6px}
+.faq p{margin:0;font-size:13px}
+.sitemap-section{
+padding:35px 0 60px;
+}
+.sitemap-heading{margin-bottom:18px}
+.sitemap-heading h2{
+font-size:25px;
+letter-spacing:-.6px;
+}
+.sitemap-heading p{
+color:var(--muted);
+font-size:13px;
+margin-top:5px;
+}
+.sitemap-window{
+height:370px;
+overflow-y:auto;
+border:1px solid var(--border);
+border-radius:13px;
+background:var(--panel);
+padding:15px;
+scrollbar-width:thin;
+scrollbar-color:#6b4a9b #111827;
+}
+.sitemap-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:9px;
+}
+.sitemap-grid a{
+display:block;
+background:#111b2c;
+border:1px solid #29354a;
+border-radius:8px;
+padding:10px 11px;
+font-size:11px;
+color:#cbd5e1;
+overflow-wrap:anywhere;
+transition:.2s;
+}
+.sitemap-grid a:hover{
+border-color:var(--purple);
+color:#d8b4fe;
+background:#1b1931;
+}
+.sitemap-count{
+font-size:11px;
+color:var(--green);
+margin-top:11px;
+}
+footer{
+border-top:1px solid var(--border);
+padding:25px 0;
+text-align:center;
+color:var(--muted);
+font-size:12px;
+}
+footer strong{color:#c084fc}
+@media(max-width:600px){
+.nav{min-height:63px}
+.logo{font-size:18px}
+.hero{padding:40px 0 20px}
+.hero h1{font-size:32px;letter-spacing:-1px}
+.hero-description{font-size:13px}
+.tool-card{padding:17px 13px;border-radius:15px}
+#userInput{height:105px;font-size:15px}
+.results-header h2{font-size:17px}
+.style-card{padding:12px}
+.style-output{font-size:19px}
+.features{grid-template-columns:1fr;gap:8px;margin-bottom:35px}
+.feature{display:flex;align-items:center;gap:12px;text-align:left;padding:11px}
+.feature-icon{font-size:20px}
+.section-title,.sitemap-heading h2{font-size:22px}
+.sitemap-grid{grid-template-columns:1fr}
+.sitemap-window{height:340px;padding:11px}
+.content-section{padding:24px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+<a href="./" class="logo">Fancy<span>Text</span> Studio</a>
+<div class="nav-badge">✦ FREE FONT GENERATOR</div>
+</div>
+</header>
+
+<main>
+
+<section class="container hero">
+<div class="eyebrow">✧ Instant Text Transformation</div>
+
+<h1 id="pageTitle">Fancy Font <span class="gradient-text">Generator</span></h1>
+
+<p class="hero-description" id="pageDescription">
+Transform ordinary text into beautiful fancy fonts, cursive lettering, gothic typography, bold symbols and aesthetic text styles. Type once and copy your favourite style instantly.
+</p>
+
+<div class="tool-card">
+
+<div class="input-header">
+<label for="userInput">Enter Your Text</label>
+<span class="live-tag">● LIVE CONVERSION</span>
+</div>
+
+<textarea id="userInput" maxlength="500" placeholder="Type your name, bio, nickname or any text here..."></textarea>
+
+<div class="input-bottom">
+<span id="charCount">0 / 500 characters</span>
+<button class="clear-btn" id="clearButton" type="button">Clear text ×</button>
+</div>
+
+<div class="results-header">
+<h2>Choose Your Favourite Font</h2>
+<span id="resultCount">8 STYLES</span>
+</div>
+
+<div class="styles-list" id="stylesList">
+
+<div class="style-card">
+<div class="style-top">
+<span class="style-name">𝓒𝓤𝓡𝓢𝓘𝓥𝓔 STYLE</span>
+<button class="copy-btn" type="button">Copy</button>
+</div>
+<div class="style-output">Your Text</div>
+</div>
+
+<div class="style-card">
+<div class="style-top">
+<span class="style-name">𝔊𝔒𝔗ℌℑℭ STYLE</span>
+<button class="copy-btn" type="button">Copy</button>
+</div>
+<div class="style-output">Your Text</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="container">
+<div class="features">
+<div class="feature">
+<div class="feature-icon">⚡</div>
+<div><strong>Instant Conversion</strong><p>See font styles as you type</p></div>
+</div>
+<div class="feature">
+<div class="feature-icon">✦</div>
+<div><strong>Multiple Font Styles</strong><p>Creative Unicode typography</p></div>
+</div>
+<div class="feature">
+<div class="feature-icon">📱</div>
+<div><strong>Mobile Optimized</strong><p>Works on phones and computers</p></div>
+</div>
+</div>
+</section>
+
+<section class="container content-section">
+
+<h2 class="section-title">What Is a Fancy Font Generator?</h2>
+
+<p>A fancy font generator is a free text conversion tool that transforms regular letters into decorative Unicode characters. Instead of installing a separate font, you can generate stylish text directly in your browser and copy the result.</p>
+
+<p>Use the tool to create attractive usernames, social media bios, gaming nicknames, captions, profile descriptions and creative messages. Different typography styles help your text stand out on platforms that support the corresponding Unicode characters.</p>
+
+<div class="info-box">
+<strong>How does this font generator work?</strong>
+<p>The generator uses JavaScript character mapping to transform supported letters into Unicode mathematical alphabets, decorative symbols and other text patterns. The generated output is copyable text, not an installed font file.</p>
+</div>
+
+<h2 class="section-title">How to Generate Fancy Text</h2>
+
+<div class="steps">
+<div class="step">
+<strong>01. Enter your text</strong>
+<p>Type your name, nickname, caption or message into the input box.</p>
+</div>
+<div class="step">
+<strong>02. Explore different styles</strong>
+<p>View cursive, gothic, bold, outlined and decorative text conversions instantly.</p>
+</div>
+<div class="step">
+<strong>03. Copy your favourite result</strong>
+<p>Tap the Copy button beside the style you want to use.</p>
+</div>
+<div class="step">
+<strong>04. Paste wherever supported</strong>
+<p>Use the generated text in compatible social media profiles, gaming names, chats and other applications.</p>
+</div>
+</div>
+
+<h2 class="section-title">Where Can You Use Fancy Fonts?</h2>
+
+<p>Fancy Unicode text can be useful for social media bios, gaming usernames, profile names, messaging, creative captions and decorative digital content. Compatibility depends on the application, device, operating system and font support.</p>
+
+<p>Some platforms restrict special characters in usernames or may display unsupported characters as empty boxes. Always preview the copied text before saving your profile.</p>
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-list">
+
+<div class="faq">
+<h3>Is this fancy font generator free?</h3>
+<p>Yes. You can convert text and copy generated styles without registration or paid software.</p>
+</div>
+
+<div class="faq">
+<h3>Can I use fancy fonts on Instagram?</h3>
+<p>You can paste compatible Unicode text into supported Instagram profile fields, captions and other text areas. Some characters may not display consistently.</p>
+</div>
+
+<div class="faq">
+<h3>Does this tool work for gaming usernames?</h3>
+<p>Generated styles may work in games that accept the corresponding Unicode characters. Individual games can restrict special symbols and decorative alphabets.</p>
+</div>
+
+<div class="faq">
+<h3>Do I need to install a font?</h3>
+<p>No. The generator creates Unicode text in your browser. You do not need to download or install a font file.</p>
+</div>
+
+<div class="faq">
+<h3>Why are some fancy characters not displaying?</h3>
+<p>Your device or application may not support particular Unicode characters. Try another generated style if you see empty boxes or missing symbols.</p>
+</div>
+
+</div>
+</section>
+
+<section class="container sitemap-section">
+<div class="sitemap-heading">
+<h2>Explore Platform-Specific Font Generators</h2>
+<p>Discover fancy fonts, stylish names, decorative symbols and text conversion tools for popular platforms.</p>
+</div>
+
+<div class="sitemap-window">
+<div class="sitemap-grid" id="sitemapGrid">
+
+<a href="?p=cursive-font-generator-for-pubg">Cursive Font Generator for PUBG</a>
+<a href="?p=cursive-font-generator-for-free-fire">Cursive Font Generator for Free Fire</a>
+<a href="?p=cursive-font-generator-for-roblox">Cursive Font Generator for Roblox</a>
+<a href="?p=cursive-font-generator-for-tiktok">Cursive Font Generator for TikTok</a>
+<a href="?p=cursive-font-generator-for-instagram">Cursive Font Generator for Instagram</a>
+<a href="?p=cursive-font-generator-for-bgmi">Cursive Font Generator for BGMI</a>
+<a href="?p=cursive-font-generator-for-fortnite">Cursive Font Generator for Fortnite</a>
+<a href="?p=cursive-font-generator-for-minecraft">Cursive Font Generator for Minecraft</a>
+<a href="?p=cursive-font-generator-for-discord">Cursive Font Generator for Discord</a>
+<a href="?p=cursive-font-generator-for-whatsapp">Cursive Font Generator for WhatsApp</a>
+<a href="?p=cursive-font-generator-for-snapchat">Cursive Font Generator for Snapchat</a>
+<a href="?p=cursive-font-generator-for-facebook">Cursive Font Generator for Facebook</a>
+<a href="?p=cursive-font-generator-for-threads">Cursive Font Generator for Threads</a>
+
+<a href="?p=glitch-text-style-for-pubg">Glitch Text Style for PUBG</a>
+<a href="?p=glitch-text-style-for-free-fire">Glitch Text Style for Free Fire</a>
+<a href="?p=glitch-text-style-for-roblox">Glitch Text Style for Roblox</a>
+<a href="?p=glitch-text-style-for-tiktok">Glitch Text Style for TikTok</a>
+<a href="?p=glitch-text-style-for-instagram">Glitch Text Style for Instagram</a>
+<a href="?p=glitch-text-style-for-bgmi">Glitch Text Style for BGMI</a>
+<a href="?p=glitch-text-style-for-fortnite">Glitch Text Style for Fortnite</a>
+<a href="?p=glitch-text-style-for-minecraft">Glitch Text Style for Minecraft</a>
+<a href="?p=glitch-text-style-for-discord">Glitch Text Style for Discord</a>
+<a href="?p=glitch-text-style-for-whatsapp">Glitch Text Style for WhatsApp</a>
+<a href="?p=glitch-text-style-for-snapchat">Glitch Text Style for Snapchat</a>
+<a href="?p=glitch-text-style-for-facebook">Glitch Text Style for Facebook</a>
+<a href="?p=glitch-text-style-for-threads">Glitch Text Style for Threads</a>
+
+<a href="?p=cool-nickname-fonts-for-pubg">Cool Nickname Fonts for PUBG</a>
+<a href="?p=cool-nickname-fonts-for-free-fire">Cool Nickname Fonts for Free Fire</a>
+<a href="?p=cool-nickname-fonts-for-roblox">Cool Nickname Fonts for Roblox</a>
+<a href="?p=cool-nickname-fonts-for-tiktok">Cool Nickname Fonts for TikTok</a>
+<a href="?p=cool-nickname-fonts-for-instagram">Cool Nickname Fonts for Instagram</a>
+<a href="?p=cool-nickname-fonts-for-bgmi">Cool Nickname Fonts for BGMI</a>
+<a href="?p=cool-nickname-fonts-for-fortnite">Cool Nickname Fonts for Fortnite</a>
+<a href="?p=cool-nickname-fonts-for-minecraft">Cool Nickname Fonts for Minecraft</a>
+<a href="?p=cool-nickname-fonts-for-discord">Cool Nickname Fonts for Discord</a>
+<a href="?p=cool-nickname-fonts-for-whatsapp">Cool Nickname Fonts for WhatsApp</a>
+<a href="?p=cool-nickname-fonts-for-snapchat">Cool Nickname Fonts for Snapchat</a>
+<a href="?p=cool-nickname-fonts-for-facebook">Cool Nickname Fonts for Facebook</a>
+<a href="?p=cool-nickname-fonts-for-threads">Cool Nickname Fonts for Threads</a>
+
+<a href="?p=aesthetic-text-symbols-copy-paste-for-pubg">Aesthetic Text Symbols for PUBG</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-free-fire">Aesthetic Text Symbols for Free Fire</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-roblox">Aesthetic Text Symbols for Roblox</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-tiktok">Aesthetic Text Symbols for TikTok</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-instagram">Aesthetic Text Symbols for Instagram</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-bgmi">Aesthetic Text Symbols for BGMI</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-fortnite">Aesthetic Text Symbols for Fortnite</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-minecraft">Aesthetic Text Symbols for Minecraft</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-discord">Aesthetic Text Symbols for Discord</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-whatsapp">Aesthetic Text Symbols for WhatsApp</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-snapchat">Aesthetic Text Symbols for Snapchat</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-facebook">Aesthetic Text Symbols for Facebook</a>
+<a href="?p=aesthetic-text-symbols-copy-paste-for-threads">Aesthetic Text Symbols for Threads</a>
+
+<a href="?p=bold-text-changer-for-pubg">Bold Text Changer for PUBG</a>
+<a href="?p=bold-text-changer-for-free-fire">Bold Text Changer for Free Fire</a>
+<a href="?p=bold-text-changer-for-roblox">Bold Text Changer for Roblox</a>
+<a href="?p=bold-text-changer-for-tiktok">Bold Text Changer for TikTok</a>
+<a href="?p=bold-text-changer-for-instagram">Bold Text Changer for Instagram</a>
+<a href="?p=bold-text-changer-for-bgmi">Bold Text Changer for BGMI</a>
+<a href="?p=bold-text-changer-for-fortnite">Bold Text Changer for Fortnite</a>
+<a href="?p=bold-text-changer-for-minecraft">Bold Text Changer for Minecraft</a>
+<a href="?p=bold-text-changer-for-discord">Bold Text Changer for Discord</a>
+<a href="?p=bold-text-changer-for-whatsapp">Bold Text Changer for WhatsApp</a>
+<a href="?p=bold-text-changer-for-snapchat">Bold Text Changer for Snapchat</a>
+<a href="?p=bold-text-changer-for-facebook">Bold Text Changer for Facebook</a>
+<a href="?p=bold-text-changer-for-threads">Bold Text Changer for Threads</a>
+
+<a href="?p=stylish-name-maker-for-pubg">Stylish Name Maker for PUBG</a>
+<a href="?p=stylish-name-maker-for-free-fire">Stylish Name Maker for Free Fire</a>
+<a href="?p=stylish-name-maker-for-roblox">Stylish Name Maker for Roblox</a>
+<a href="?p=stylish-name-maker-for-tiktok">Stylish Name Maker for TikTok</a>
+<a href="?p=stylish-name-maker-for-instagram">Stylish Name Maker for Instagram</a>
+<a href="?p=stylish-name-maker-for-bgmi">Stylish Name Maker for BGMI</a>
+<a href="?p=stylish-name-maker-for-fortnite">Stylish Name Maker for Fortnite</a>
+<a href="?p=stylish-name-maker-for-minecraft">Stylish Name Maker for Minecraft</a>
+<a href="?p=stylish-name-maker-for-discord">Stylish Name Maker for Discord</a>
+<a href="?p=stylish-name-maker-for-whatsapp">Stylish Name Maker for WhatsApp</a>
+<a href="?p=stylish-name-maker-for-snapchat">Stylish Name Maker for Snapchat</a>
+<a href="?p=stylish-name-maker-for-facebook">Stylish Name Maker for Facebook</a>
+<a href="?p=stylish-name-maker-for-threads">Stylish Name Maker for Threads</a>
+
+</div>
+</div>
+<div class="sitemap-count">78 platform-specific keyword variations</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<p><strong>FancyText Studio</strong> — Free Fancy Font & Text Style Generator</p>
+<p style="margin-top:5px">Create, convert and copy stylish Unicode text instantly.</p>
+</div>
+</footer>
+
+<script>
+"use strict";
+
+const input=document.getElementById("userInput");
+const stylesList=document.getElementById("stylesList");
+const charCount=document.getElementById("charCount");
+
+const platforms={
+"pubg":"PUBG",
+"free-fire":"Free Fire",
+"roblox":"Roblox",
+"tiktok":"TikTok",
+"instagram":"Instagram",
+"bgmi":"BGMI",
+"fortnite":"Fortnite",
+"minecraft":"Minecraft",
+"discord":"Discord",
+"whatsapp":"WhatsApp",
+"snapchat":"Snapchat",
+"facebook":"Facebook",
+"threads":"Threads"
+};
+
+const phrases={
+"cursive-font-generator-for":"Cursive Font Generator for",
+"glitch-text-style-for":"Glitch Text Style for",
+"cool-nickname-fonts-for":"Cool Nickname Fonts for",
+"aesthetic-text-symbols-copy-paste-for":"Aesthetic Text Symbols Copy Paste for",
+"bold-text-changer-for":"Bold Text Changer for",
+"stylish-name-maker-for":"Stylish Name Maker for"
+};
+
+const styleDefinitions=[
+{name:"𝓒𝓤𝓡𝓢𝓘𝓥𝓔",type:"cursive"},
+{name:"𝔊𝔒𝔗ℌℑℭ",type:"gothic"},
+{name:"𝐁𝐎𝐋𝐃",type:"bold"},
+{name:"𝔹𝕆𝕌𝕋𝕃𝕀ℕ𝔼",type:"outline"},
+{name:"ＳＴＹＬＩＳＨ",type:"fullwidth"},
+{name:"丂ㄒㄚㄥ丨丂卄",type:"decorative"},
+{name:"✦ STAR DECORATION ✦",type:"stars"},
+{name:"꧁༺ FANCY STYLE ༻꧂",type:"ornate"}
+];
+
+const maps={
+cursive:{
+upper:"𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩",
+lower:"𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃",
+digits:""
+},
+gothic:{
+upper:"𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ",
+lower:"𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷",
+digits:""
+},
+bold:{
+upper:"𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙",
+lower:"𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳",
+digits:"𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗"
+},
+outline:{
+upper:"𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ",
+lower:"𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫",
+digits:"𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡"
+},
+fullwidth:{
+upper:"ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ",
+lower:"ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ",
+digits:"０１２３４５６７８９"
+}
+};
+
+function convertMapped(text,type){
+
+const map=maps[type];
+if(!map)return text;
+
+const upper=[...map.upper];
+const lower=[...map.lower];
+const digits=[...map.digits];
+
+return Array.from(text).map(char=>{
+if(char>="A" && char<="Z")return upper[char.charCodeAt(0)-65]||char;
+if(char>="a" && char<="z")return lower[char.charCodeAt(0)-97]||char;
+if(char>="0" && char<="9")return digits[Number(char)]||char;
+return char;
+}).join("");
+
+}
+
+function convertText(text,type){
+
+switch(type){
+case "cursive":
+case "gothic":
+case "bold":
+case "outline":
+case "fullwidth":
+return convertMapped(text,type);
+
+case "decorative":
+return Array.from(text).map(char=>{
+const replacements={
+A:"卂",B:"乃",C:"匚",D:"刀",E:"乇",F:"下",
+G:"Ꮆ",H:"卄",I:"丨",J:"ﾌ",K:"Ҝ",L:"ㄥ",
+M:"爪",N:"几",O:"ㄖ",P:"卩",Q:"Ɋ",R:"尺",
+S:"丂",T:"ㄒ",U:"ㄩ",V:"ᐯ",W:"山",X:"乂",
+Y:"丫",Z:"乙"
+};
+return replacements[char.toUpperCase()]||char;
+}).join("");
+
+case "stars":
+return text ? "✦ " + text.split("").join(" ✧ ") + " ✦" : "";
+
+case "ornate":
+return text ? "꧁༺ " + text + " ༻꧂" : "";
+
+default:return text;
+}
+
+}
+
+function renderStyles(){
+
+const text=input.value;
+charCount.textContent=text.length+" / 500 characters";
+
+stylesList.innerHTML="";
+
+styleDefinitions.forEach((style,index)=>{
+
+const output=convertText(text,style.type);
+
+const card=document.createElement("div");
+card.className="style-card";
+
+const top=document.createElement("div");
+top.className="style-top";
+
+const name=document.createElement("span");
+name.className="style-name";
+name.textContent=style.name+" STYLE";
+
+const button=document.createElement("button");
+button.className="copy-btn";
+button.type="button";
+button.textContent="Copy";
+button.setAttribute("aria-label","Copy "+style.name+" text");
+
+const result=document.createElement("div");
+result.className="style-output";
+
+if(output){
+result.textContent=output;
+}else{
+result.textContent="Your transformed text will appear here...";
+result.className="style-output empty-state";
+}
+
+button.addEventListener("click",async()=>{
+if(!output)return;
+
+try{
+await navigator.clipboard.writeText(output);
+button.textContent="Copied ✓";
+}catch(error){
+const temp=document.createElement("textarea");
+temp.value=output;
+document.body.appendChild(temp);
+temp.select();
+const success=document.execCommand("copy");
+temp.remove();
+button.textContent=success?"Copied ✓":"Select Text";
+}
+
+setTimeout(()=>button.textContent="Copy",1800);
+});
+
+top.appendChild(name);
+top.appendChild(button);
+card.appendChild(top);
+card.appendChild(result);
+stylesList.appendChild(card);
+
+});
+
+}
+
+input.addEventListener("input",renderStyles);
+
+document.getElementById("clearButton").addEventListener("click",()=>{
+input.value="";
+renderStyles();
+input.focus();
+});
+
+function createLandingData(slug){
+
+if(!slug){
+return{
+keyword:"Fancy Font Generator",
+description:"Transform ordinary text into beautiful fancy fonts, cursive lettering, gothic typography, bold symbols and aesthetic text styles. Type once and copy your favourite style instantly."
+};
+}
+
+const clean=slug.toLowerCase().replace(/[^a-z0-9-]/g,"");
+
+let phraseMatch="";
+let platformMatch="";
+
+for(const phrase of Object.keys(phrases)){
+if(clean.startsWith(phrase)){
+phraseMatch=phrase;
+platformMatch=clean.substring(phrase.length);
+break;
+}
+}
+
+if(phraseMatch && platforms[platformMatch]){
+
+const keyword=phrases[phraseMatch]+" "+platforms[platformMatch];
+
+return{
+keyword:keyword,
+description:"Use our free "+keyword.toLowerCase()+" tool to transform ordinary text into stylish Unicode typography. Generate creative text, explore decorative styles and copy your favourite result for compatible "+platforms[platformMatch]+" profiles, usernames and messages."
+};
+
+}
+
+const keyword=clean.replace(/-/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+
+return{
+keyword:keyword||"Fancy Font Generator",
+description:"Generate stylish text with our free "+keyword+" tool. Explore creative Unicode fonts, decorative lettering and copy-paste typography for compatible social media profiles, gaming usernames and messages."
+};
+
+}
+
+function initializeRouting(){
+
+const params=new URLSearchParams(window.location.search);
+const slug=params.get("p");
+const data=createLandingData(slug);
+
+document.title=data.keyword.toUpperCase()+" - Free Fonts Copy Paste";
+
+let meta=document.querySelector('meta[name="description"]');
+
+if(!meta){
+meta=document.createElement("meta");
+meta.name="description";
+document.head.appendChild(meta);
+}
+
+meta.content=data.description;
+
+const title=document.getElementById("pageTitle");
+title.textContent=data.keyword;
+title.classList.add("gradient-text");
+
+document.getElementById("pageDescription").textContent=data.description;
+
+document.querySelector(".input-header label").textContent=
+"Create "+data.keyword;
+
+}
+
+window.onload=function(){
+initializeRouting();
+renderStyles();
+};
+
+</script>
+
+</body>
+</html>
